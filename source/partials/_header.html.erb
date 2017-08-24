@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Welcome Montgomery</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+
+  <% rel = current_page.data.relative %>
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="<% rel %>/stylesheets/all.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script language="JavaScript" type="text/javascript" src="<% rel %>/javascripts/all.js"></script>
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--link rel="icon" type="image/png" href="images/favicon.png"-->
+
+  <script type="text/javascript">(function(d, t, e, m){
+    
+    // Async Rating-Widget initialization.
+    window.RW_Async_Init = function(){
+                
+        RW.init({
+            huid: "371988",
+            uid: "82ead0fbcf28a24eea50adc35e05723d",
+            options: { "style": "oxygen" } 
+        });
+        RW.render();
+    };
+        // Append Rating-Widget JavaScript library.
+    var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+        l = d.location, ck = "Y" + t.getFullYear() + 
+        "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+        f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+        a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+    if (d.getElementById(id)) return;              
+    rw = d.createElement(e);
+    rw.id = id; rw.async = true; rw.type = "text/javascript";
+    rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+    s.parentNode.insertBefore(rw, s);
+    }(document, new Date(), "script", "rating-widget.com/"));</script>
+
+</head>
+<body id="body">
+
+ <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Welcome Montgomery</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="<% rel %>/" id="logo">Welcome Montgomery</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="<%= nav_active("index.html") %>"><a href="<% rel %>/">Home</a></li>
+              <li class="<%= nav_active("WhatToExpect/index.html") %>"><a href="<% rel %>/WhatToExpect">What to Expect</a></li>
+              <li class="dropdown ">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Activities <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                
+                  <% blog('activities').articles.sort_by(&:title).each do |activity| %>
+                    <li class="<%= nav_active(activity.path) %>"><a href="<%= activity.url  %>"><%= activity.title %></a></li>
+                  <% end %>
+
+                </ul>
+               </li>  
+                <li class="dropdown ">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                  
+                    <!--% blog('activities').articles.sort_by(&:title).each do |activity| %-->
+                      <li class=""><a href="https://www.facebook.com/ACSCAY17/">ACSC 2017 Facebook Group</a></li>
+                      <li class=""><a href="http://knowthecommunity.com/">Know The Communnity</a></li>
+                      <li class=""><a href="http://www.montgomeryal.gov/">MontgomeryAL.gov</a></li>
+                      <li class=""><a href="https://visitingmontgomery.com/">Visiting Montgomery</a></li>
+                    <!--% end %-->
+
+                  </ul>
+                </li>
+                <li class="<%= nav_active("FAQ/index.html") %>"><a href="<% rel %>/FAQ">Roster</a></li>
+                <li class="<%= nav_active("FAQ/index.html") %>"><a href="<% rel %>/FAQ">FAQ</a></li>
+                <li class="<%= nav_active("Contact/index.html") %>"><a href="<% rel %>/Contact">Contact</a></li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div style="height:100px;"></div>
+      <div class="container">

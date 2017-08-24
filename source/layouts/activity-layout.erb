@@ -1,0 +1,35 @@
+<%= partial "partials/header" %>
+	
+    <h1 class="text-center"><%= current_page.title %></h1>
+  	<%= yield %>
+
+  	<br> <br>
+
+  	<button type="button" class="btn btn-info show-comments">Show Comments</button>
+
+	<!-- The empty element required for Disqus to loads comments into -->  
+	<div id="disqus_thread"></div>
+
+
+ <script>
+ // Requires jQuery of course.
+$(document).ready(function() {
+    $('.show-comments').on('click', function(){
+          var disqus_shortname = 'welcome-montgomery'; // Replace this value with *your* username.
+
+          // ajax request to load the disqus javascript
+          $.ajax({
+                  type: "GET",
+                  url: "http://" + disqus_shortname + ".disqus.com/embed.js",
+                  dataType: "script",
+                  cache: true
+          });
+          // hide the button once comments load
+          $(this).fadeOut();
+    });
+});
+ </script>
+                            
+
+
+<%= partial "partials/footer"  %>
