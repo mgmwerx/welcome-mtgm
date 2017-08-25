@@ -67,7 +67,7 @@
 <body id="body">
 
  <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+        <!--div class="container"-->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Welcome Montgomery</span>
@@ -77,11 +77,146 @@
             </button>
             <a class="navbar-brand" href="<% rel %>/" id="logo">Welcome Montgomery</a>
           </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
+          <div class="navbar-collapse collapse js-navbar-collapse">
+            <ul class="nav navbar-nav">
               <li class="<%= nav_active("index.html") %>"><a href="<% rel %>/">Home</a></li>
               <li class="<%= nav_active("WhatToExpect/index.html") %>"><a href="<% rel %>/WhatToExpect">What to Expect</a></li>
-              <li class="dropdown ">
+              
+
+               <li class="dropdown dropdown-large">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
+        
+                    <ul class="dropdown-menu dropdown-menu-large row">
+                      <li class="col-sm-3">
+                        <ul>
+                          <li class="dropdown-header">Housing</li>
+                          <li><a href="#">Montgomery</a></li>
+                          <li><a href="#">Prattville</a></li>
+                          <li><a href="#">Millbrook</a></li>
+                          <li><a href="#">Wetumpka</a></li>
+                          <li><a href="#">Pike Road</a></li>
+                          <li class="divider"></li>
+                          <li class="dropdown-header">Churches</li>
+                          <li><a href="#">Catholic</a></li>
+                          <li><a href="#">Baptist</a></li>
+                          <li><a href="#">Presbyterian</a></li>
+                          <li><a href="#">Methodist</a></li>
+                          <li><a href="#">Nondenominational</a></li>
+                        </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <li class="dropdown-header">Education</li>
+                          <li><a href="#">Preschool &amp; Daycare</a></li>
+                          <li><a href="#">Public Schools</a></li>
+                          <li><a href="#">Private Schools</a></li>
+                          <li class="divider"></li>
+                          <li class="dropdown-header">Health Care</li>
+                          <li><a href="#">Dentists</a></li>
+                          <li><a href="#">OB/GYN</a></li>
+                          <li><a href="#">Ophthamologist</a></li>
+                          <li><a href="#">Pediatricians</a></li>
+                          <li><a href="#">Primary Doctors</a></li>
+                          <li><a href="#">Veterinarians</a></li>
+                        </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <li class="dropdown-header">Utilities</li>
+                          <li><a href="#">Phone &amp; Cable</a></li>
+                          <li><a href="#">Highspeed Internet</a></li>
+                          <li><a href="#">Power</a></li>
+                          <li><a href="#">Water &amp; Garbage</a></li>
+                          <li><a href="#">Natrual Gas</a></li>
+                          <li class="divider"></li>
+                          <li class="dropdown-header">Get Settled</li>
+                          <li><a href="#">Driver's License</a></li>
+                          <li><a href="#">Vehicle Registration &amp; Tags</a></li>
+                          <li><a href="#">Vessel Registration</a></li>
+                          <li><a href="#">Voter Registration</a></li>
+                        </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <li class="dropdown-header">Businesses</li>
+                          <li><a href="#">Car Repair</a></li>
+                          <li><a href="#">Cleaning</a></li>
+                          <li><a href="#">Independant Contractors</a></li>
+                          <li><a href="#">Hair Care</a></li>
+                          <li><a href="#">Gyms &amp; Fitness</a></li>
+                          <li><a href="#">Lawn Care</a></li>
+                          <li><a href="#">Legal Services</a></li>
+                          <li><a href="#">Pest Control</a></li>
+                          <li><a href="#">Pet Sitters</a></li>
+                          <li><a href="#">Salons &amp; Spas</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    
+                  </li>
+
+
+              <li class="dropdown dropdown-large">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activities <b class="caret"></b></a>
+        
+                    <ul class="dropdown-menu dropdown-menu-large row">
+                      <li class="col-sm-4">
+                        <ul>
+                          <li class="dropdown-header">Food | Drinks</li>
+                          <li><a href="#">Local Restaurants</a></li>
+                          <li><a href="#">Kids Eat Free</a></li>
+                          <li class="divider"></li>
+                          <li class="dropdown-header">Night Life</li>
+                          <li><a href="#">Bars</a></li>
+                          <li><a href="#">Billiards</a></li>
+                          <li><a href="#">Clubs</a></li>
+                          <li class="divider"></li>
+                          <li class="dropdown-header">Parks</li>
+                          <li><a href="#">Alabama Shakespeare Festival</a></li>
+                          <li><a href="#">AUM/Ronn Nunn Montgomery</a></li>
+                          <li><a href="#">Ida Belle Young Park</a></li> 
+                          <li><a href="#">Lagoon Park</a></li>
+                          <li><a href="#">More...</a></li>
+                        </ul>
+                      </li>
+                      <li class="col-sm-5">
+                        <ul>
+                          <li class="dropdown-header">Attractions | Entainment</li>
+                          <li><a href="#">Hank Williams Museum</a></li>
+                          <li><a href="#">Harriot II Riverboat</a></li>
+                          <li><a href="#">Montgomery Biscuits Baseball</a></li>
+                          <li><a href="#">Montgomery Museum of Fine Arts</a></li>
+                          <li><a href="#">Montgomery Performing Arts Center</a></li>
+                          <li><a href="#">Montgomery Zoo</a></li>
+                          <li><a href="#">Old Alabama Town</a></li>
+                          <li><a href="#">Rosa Parks Library and Museum &amp; Children’s Wing</a></li>
+                          <li><a href="#">The Capri Theatre</a></li>
+                          <li><a href="#">The Waters</a></li>
+                          
+                          
+                        </ul>
+                      </li>
+                      <li class="col-sm-3">
+                        <ul>
+                          <li class="dropdown-header">Other</li>
+                          <li><a href="#">Hunting</a></li>
+                          <li><a href="#">Fishing</a></li>
+                          <li><a href="#">Hiking</a></li>
+                          <li><a href="#">Golf Courses</a></li>
+                          <li><a href="#">Go Karting</a></li>
+                          <li><a href="#">Escape Games</a></li>
+                          <li><a href="#">Farmers Markets</a></li>
+                          <li><a href="#">Stuff for Kids</a></li>
+                          <li><a href="#">Youth Sports</a></li>
+                          <li><a href="#">Weekend Getaways</a></li>
+                          <li><a href="#">Volunteer</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    
+                  </li>
+
+              <!--li class="dropdown ">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Activities <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                 
@@ -90,27 +225,38 @@
                   <% end %>
 
                 </ul>
-               </li>  
+               </li-->  
                 <li class="dropdown ">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                   
-                    <!--% blog('activities').articles.sort_by(&:title).each do |activity| %-->
-                      <li class=""><a href="https://www.facebook.com/ACSCAY17/">ACSC 2017 Facebook Group</a></li>
+                      <li class=""><a href="https://www.facebook.com/ACSCAY17/">ACSC 2017 Facebook Page</a></li>
+                      <li class=""><a href="http://www.acscspouses.com/">ACSC Spouces Website</a></li>
+                      <li class="divider"></li>
                       <li class=""><a href="http://knowthecommunity.com/">Know The Communnity</a></li>
                       <li class=""><a href="http://www.montgomeryal.gov/">MontgomeryAL.gov</a></li>
+                      <li class=""><a href="http://www.funinmontgomery.com/">Parks and Recreation</a></li>
                       <li class=""><a href="https://visitingmontgomery.com/">Visiting Montgomery</a></li>
-                    <!--% end %-->
 
                   </ul>
                 </li>
-                <li class="<%= nav_active("FAQ/index.html") %>"><a href="<% rel %>/FAQ">Roster</a></li>
+                <li class="<%= nav_active("Roster/index.html") %>"><a href="<% rel %>/Roster">Roster</a></li>
                 <li class="<%= nav_active("FAQ/index.html") %>"><a href="<% rel %>/FAQ">FAQ</a></li>
                 <li class="<%= nav_active("Contact/index.html") %>"><a href="<% rel %>/Contact">Contact</a></li>
               </li>
             </ul>
+              <div>
+                <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+                </form> 
+            </div>
           </div>
-        </div>
+        <!--/div-->
       </nav>
       <div style="height:100px;"></div>
       <div class="container">

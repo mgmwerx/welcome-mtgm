@@ -211,4 +211,11 @@ Phone number: (334) 273-7427<br>
 </div>
 </div>
 
+<br><br>
+<span style="font-size: 150%">
+__Want to add a restaurant to the list?__
+
+<span style="font-size: 150%">
+__Let us know in the comments below and we'll add it!__
+
 
