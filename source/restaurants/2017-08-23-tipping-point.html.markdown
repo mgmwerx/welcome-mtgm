@@ -6,11 +6,9 @@ relative: ../..
 ---
 
 <br><br> 
-
-
-<div class="row">
+<div class="row ">
 	<div class="col-md-4">
-			<img src="../images/food1.jpg"/> 
+			<img src="../images/tippingPoint.png"/> 
 		</div>
 	<div class="col-md-4">
 		<!--div class="row">
@@ -42,10 +40,10 @@ relative: ../..
 
 
 <br><br>
-Here's some information about the restaurant.. Tipping point is a great place to eat and meet some of the locals of Montgomery Alabama. This restaurant offers some of the best food in town! 
+Tipping point is a great place to eat and meet some of the locals of Montgomery Alabama. This restaurant offers some of the best food in town! 
 
 
-__What is Lorem Ipsum?__
+What is Lorem Ipsum?
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 Why do we use it?
@@ -71,5 +69,4 @@ var marker = new google.maps.Marker({
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkfW1SjtAsK7xNwzQJ3p5chyoUYdA3qSE&callback=myMap"></script>
 
-</div>
-</div>
+
