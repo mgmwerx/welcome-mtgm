@@ -1,0 +1,51 @@
+---
+title: Welcome to Middleman
+relative: ..
+---
+
+<script language="JavaScript" type="text/javascript" src="/events/list/data-tables.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="/events/segment.js"></script>
+<link rel="stylesheet" href="/events/segment.css">
+
+<h1 class="text-center"> </h1>
+<br><br>
+
+<div class="container" >
+  <div id="segment"  class="segmented" style="max-width:250;">
+    <label id="calendar"><input type="radio" name="segmented" /> Calendar </label>
+    <label id="map"><input type="radio" name="segmented" /> Map </label>
+    <label class="checked" id="list"><input type="radio" name="segmented" checked /> List </label>
+  </div>
+</div>
+
+<h1 class="text-center">List of Events</h1>
+<br><br>
+
+<table id="eventsTable">
+  <thead>
+        <tr>
+            <th>Event Id</th>
+            <th>Source Id</th>
+            <th>Title</th>
+            <th>Host</th>
+            <th>Start Day/Time</th>
+            <th>End Day/Time</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+</table>
+
+<br><br><br><br>
+<h1 class="text-center">Event Details</h1>
+<br><br>
+
+<table id="detailsTable">
+  <thead>
+        <tr>
+            <th>Image</th>
+            <th>Description</th>
+            <th class="col-md-2">Source URL</th>
+        </tr>
+    </thead>
+</table>

@@ -34,7 +34,8 @@
   <!-- Calendar CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.print.css" media='print'>
-  
+
+ 
 
 
 
@@ -43,6 +44,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script language="JavaScript" type="text/javascript" src="<% rel %>/javascripts/all.js"></script>
+
+  
 
 
   <!-- FAQ JS -->
@@ -53,6 +56,12 @@
   <!-- Calendar JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+
+
+  <!-- Datatables -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
 
 
 
@@ -117,10 +126,10 @@
                 </li-->
 
 
-                <li class="dropdown dropdown-large" >
+                <!--li class="dropdown dropdown-large" >
                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">WhatToExpect <b class="caret"></b></a>
         
-                    <ul class="dropdown-menu dropdown-menu-large row"><!-- style="margin-left: 8cm !important;"-->
+                    <ul class="dropdown-menu dropdown-menu-large row"><style="margin-left: 8cm !important;">
                       <li class="col-sm-4">
                         <ul>
                           <li class="dropdown-header">Enlisted Education</li>
@@ -145,7 +154,7 @@
                       
                     </ul>
                     
-                  </li>
+                  </li-->
 
               
 
@@ -294,7 +303,16 @@
 
                 </ul>
                </li-->  
-                <li class="<%= nav_active("Events/index.html") %>"><a href="<% rel %>/Events">Events</a></li>
+                <!--li class="<%= nav_active("Events/index.html") %>"><a href="<% rel %>/Events">Events</a></li-->
+                <li class="dropdown ">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li class="<%= nav_active("events/calendar/index.html") %>"><a href="<% rel %>/events/calendar">Calendar</a></li>
+                      <li class="<%= nav_active("events/map/index.html") %>"><a href="<% rel %>/events/map">Map</a></li>
+                      <li class="<%= nav_active("events/list/index.html") %>"><a href="<% rel %>/events/list">Event List</a></li>
+
+                  </ul>
+                </li>
                 <li class="dropdown ">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Links <span class="caret"></span></a>
                   <ul class="dropdown-menu">
